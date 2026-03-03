@@ -21,8 +21,8 @@ html {
 }
 
 body {
-  font-family: Georgia, serif;
-  color: #2B1F0E;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2b1f0e48;
   background: #FDF6EC;
   line-height: 1.6;
 }
@@ -42,7 +42,7 @@ body {
 /* .nav-logo — the cafe name in the navbar */
 .nav-logo {
   font-size: 22px;
-  color: #E8A94E;
+  color: #f63bbb8a;
   text-decoration: none;
 }
 
@@ -62,7 +62,9 @@ body {
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  background:rgba(255, 255, 255, 0.15);
+  border-radius:4px;
+  
 }
 
 
@@ -70,7 +72,7 @@ body {
    Only ONE hero section, so we use #id. */
 
 #hero {
-  background: #6B4226;
+  background: #938674;
   color: white;
   text-align: center;
   padding: 100px 40px;
@@ -106,7 +108,7 @@ body {
 
 /* .btn-gold — gold background modifier */
 .btn-gold {
-  background: #E8A94E;
+  background: #3b82f6;
   color: #2B1F0E;
 }
 
@@ -140,7 +142,7 @@ body {
 
 /* Override the title color when inside a dark section */
 .section-dark .section-title {
-  color: #E8A94E;
+  color: #3b82f6;
 }
 
 
@@ -162,14 +164,16 @@ body {
 
 .card:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
 }
 
 /* .card-img — shared image style */
-.card-img {
+.card-img  {
   width: 100%;
   height: 180px;
   object-fit: cover;
   display: block;
+  border-radius: 8px 8px 0 0;
 }
 
 /* .card-body — padding inside each card */
@@ -186,7 +190,7 @@ body {
 /* .card-text — description text */
 .card-text {
   font-size: 14px;
-  color: #8C7A66;
+  color: #1E3A8A;
   margin-bottom: 10px;
 }
 
@@ -194,7 +198,7 @@ body {
 .price {
   font-weight: bold;
   font-size: 16px;
-  color: #6B4226;
+  color: #3b82f6;
   margin-right: 8px;
 }
 
@@ -213,7 +217,7 @@ body {
 
 /* .tag-popular — gold */
 .tag-popular {
-  background: #E8A94E;
+  background: #f6643b;
   color: #2B1F0E;
 }
 
@@ -259,10 +263,10 @@ body {
 
 /* .review-card — reused for every review */
 .review-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   padding: 24px;
   border-radius: 8px;
-  border-left: 4px solid #E8A94E;
+  border-left: 4px solid #3b82f6;
 }
 
 /* .review-text */
@@ -277,7 +281,7 @@ body {
 .review-author {
   font-size: 13px;
   font-weight: bold;
-  color: #E8A94E;
+  color: #f63b3b;
 }
 
 
@@ -285,18 +289,66 @@ body {
    Only ONE footer, so we use #id. */
 
 #site-footer {
-  background: #2B1F0E;
-  color: #FDF6EC;
+  background: #e3d6d043;
+  color: #fdecec;
   text-align: center;
   padding: 24px 40px;
   font-size: 14px;
 }
 
 #site-footer a {
-  color: #E8A94E;
+  color: #f63b3b;
   text-decoration: none;
 }
 
 #site-footer a:hover {
   text-decoration: underline;
+}
+/* ===== TEAM SECTION ===== */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.team-member {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.team-photo {
+  width: 100px;
+  height: 100px;
+  background: #2B1F0E;
+  border-radius: 50%;
+  margin: 0 auto 16px auto;
+}
+
+.team-name {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.team-role {
+  font-size: 14px;
+  color: #666;
+}
+/* ===== GALLERY SECTION ===== */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
